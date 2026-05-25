@@ -1,5 +1,5 @@
-# document-scanner-visunext
-document-scanner-visunext, simple doc scanner for convenience. visunext ipevo 4k4 scanner can easily get docs in 200dpi.
+# document-scanner-ipevo
+simple doc scanner for convenience. the ipevo 4k4 scanner that I bought at visunext can easily get docs in 200dpi.
 
 Buy here:
 https://us.ipevo.com/pages/v4k-ultra
