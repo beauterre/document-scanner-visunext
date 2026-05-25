@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  height: 100%;
+  overflow: hidden;
+}
+#version {
+  position: absolute;
+  bottom: 10px;  /* adjust spacing as needed */
+  right: 10px;
+  font-size: 12px;
+  color: #888;
+}
+select {
+  margin-top: 20px;
+  padding: 6px;
+  font-size: 16px;
+}
+#last_scan
+{
+	border: 1px solid white; background: black;
+	height: 430px;
+}
+#work-area {
+  background: #222;
+  color: #eee;
+  position:relative;
+  position: fixed;
+  top: 0;
+  left: 200px;               /* match #controls1 width */
+  right: 500px;              /* match #controls2 width */
+  height: 100%;
+  text-align: center;
+}
+
+#controls1 {
+  background: #333;
+  color: #eee;
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#controls2 {
+  background: #333;
+  color: #eee;
+  position: fixed;
+  width: 500px;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+td{
+	padding-bottom:15px;
+}
+.small{
+	width: 50px;
+}
+#download_as_png {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.5em;
+  background-color: #DD4433;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.2),  /* regular shadow */
+    0 0 10px rgba(255, 0, 0, 0.6); /* red glow */
+  text-shadow: 1px 1px 2px black; /* white text shadow */
+}
+
+#download_as_png:hover {
+  background-color: #EE3322;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(255, 50, 50, 0.8); /* stronger glow on hover */
+}
+
+#preview {
+  height: 100%;
+}
+

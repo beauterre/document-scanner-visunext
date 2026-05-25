@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Scanner Preview</title>
+  <link rel="stylesheet" href="scanner.css">
+</head>
+<body>
+  <h1>Document Scanner Preview</h1>
+  <div id="controls1">
+   <fieldset>
+    <legend>Camera settings</legend>
+    <select id="cameraSelect"></select>
+  </fieldset>
+  </div>
+<div id="controls2">
+  <fieldset>
+    <legend>Scan Area</legend>
+    <button id="set_scan_area">Drag Box</button>
+    <button id="clear_scan_area">No Box</button>
+    <button id="guess_scan_area">Guess</button>
+  </fieldset>
+
+  <fieldset>
+    <legend>Download box als</legend>
+    
+	<table>
+	<tr>
+	<td>
+    <label for="basecategory">Categorie:</label>
+	</td>
+	<td>
+    <select id="basecategory">
+      <option>Varia</option>
+      <option>Belasting</option>
+      <option>Boek</option>
+      <option>Contract</option>
+      <option>Bezit-algemeen</option>
+      <option>Bezit-Auto-Toyota-Yaris</option>
+      <option>Bezit-Auto-Toyota-Verso</option>
+      <option>Bezit-Bos-Hoenderloo</option>
+      <option>Bezit-Huis-Dovenetel</option>
+      <option>Bezit-Huis-Bulgarije</option>
+      <option>Bezit-Huis-Bulgarije-Schetsen</option>
+      <option>Bezit-Grond-Bulgarije</option>
+      <option>Todo-list</option>
+      <option>Contacts-businesscards</option>
+      <option>Schetsen-algemeen</option>
+      <option>Schetsen-Sampo</option>
+      <option>Verzekeringen</option>
+      <option>Bankzaken</option>
+      <option>Bonnen-algemeen</option>
+      <option>Zorg</option>
+      <option>Pakket-niet-thuis</option>
+      <option>Werk</option>
+      <option>Gas-water-licht</option>
+      <option>Overheid</option>
+      <option>Hypotheek</option>
+      <option>Abonnementen</option>
+      <option>Alimentatie</option>
+      <option>Scholing</option>
+      <option>Correspondentie</option>
+      <option>Lebara-Cannock</option>
+    </select>
+	</td>
+	</tr>
+	<tr><td>
+    <label for="basename">Aanleiding:</label>
+	</td><td>
+    <input id="basename" type="text" placeholder="Bijv. Aanslag 2025" />
+	</td>
+	</tr>
+	<tr><td>
+    <label for="page">Paginanummer:</label>
+	</td><td>
+    <input id="page" class="small" type="number" placeholder="1" />/<input class="small" id="nrofpages" type="number" placeholder="1" />
+	</td>
+	</tr>
+	<tr><td>
+    <label for="bookmode">bookmode:</label>
+	</td><td>
+    <input id="bookmode" class="small" type="checkbox" placeholder="1" />
+	</td>
+	</tr>
+	<tr>
+	<td>
+    <label for="doc_date">Datum:</label>
+	</td><td>
+    <input type="date" id="doc_date" /><button id="today">📅</button>
+	</td>
+	</tr>
+	</table>
+	<button id="download_as_png">💾 DOWNLOAD</button>
+  </fieldset>
+  <fieldset><legend>Last scan</legend>
+  <div id="last_scan_name"></div>
+  scanned on:<div id="last_scan_date"></div>
+  <canvas id="last_scan"></canvas>
+  </fieldset>
+</div>
+
+
+  <div id="work-area">
+    <canvas id="preview"></canvas>
+		<div id="version">Version: 7-8-2025</div>
+
+  </div>
+
+  <div id="lib" style="display: none;">
+    <video id="video" autoplay playsinline></video>
+  </div>
+
+  <script src="camera.js"></script>
+  <script src="scanner.js"></script>
+</body>
+</html>
